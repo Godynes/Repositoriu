@@ -3,50 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Emotional Analysis System</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
 </head>
-<body id="fundoVerde">
+<body class="crt-effect">
+    <div class="scanlines"></div>
 
-        <div class="CENTRO"> 
-            <h1  class="TextoVerde textMain"> EMOTIONAL ANALYSIS SYSTEM LOGIN REQUIRED</h1>
-             <h2 class="TextoVerde textSubject"> SUBJECT CONNECTION INITIANTION </h2>
-            
-             <div class="BUTOES">
-                <div class="InputLogin">
-                    <p class="TextoVerde">
-                        USERNAME:
-                    </p>
-                    <input type="text" name="username">
-                </div>
+    <main class="container">
+        <header class="header-titles">
+            <h1 class="text-neon blink">EMOTIONAL ANALYSIS SYSTEM LOGIN REQUIRED</h1>
+            <h2 class="text-neon text-subject">SUBJECT CONNECTION INITIATION</h2>
+        </header>
 
-                <div class="InputLogin">
-                    <p class="TextoVerde">
-                        PASSAWORD:
-                    </p>
-                    <input type="password" name="password">
-                </div>   
+        <form class="login-form">
+            <div class="input-group">
+                <label for="username" class="text-neon">USERNAME:</label>
+                <input type="text" id="username" name="username" required autocomplete="off">
             </div>
 
-            <button class="TextoVerde" type="button"> 
-                START ANALYSIS 
-            </button>
-            
+            <div class="input-group">
+                <label for="password" class="text-neon">PASSWORD:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
 
+            <button class="btn-neon" type="submit">START ANALYSIS</button>
+        </form>
 
-            <p class="TextoVerde">
-                SYSTEM NOTE:
-            </p>
-
-             <p class="TextoVerde"> 
-                 Please ensure all data is saved before proceeding.
-            </p>
+        <div class="system-notes">
+            <p class="text-neon">SYSTEM NOTE:</p>
+            <p class="text-neon dim">Please ensure all data is saved before proceeding.</p>
         </div>
+    </main>
 
-         <div class="SEPARADO">
-             <p class="TextoVerde"> ENTRY 0001</p>
-             <p class="TextoVerde"> STATUS: AWAINTING INPUT</p>
-         </div>
+    <footer class="footer-status">
+        <p class="text-neon">ENTRY 0001</p>
+        <p class="text-neon blink-slow">STATUS: AWAITING INPUT</p>
+    </footer>
 
 </body>
 </html>
